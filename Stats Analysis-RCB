@@ -1,0 +1,15 @@
+#For finding Best Allrounder in RCB Team
+#Joining Two Tables
+
+SELECT batting.player,batting.Runs,bowling.Wkts,batting.Bat_Ave,bowling.Mat
+FROM batting
+INNER JOIN bowling
+ON batting.player=bowling.player
+WHERE bowling.Wkts>10 AND batting.Runs>500;
+
+
+#Count of Players used in IPL
+SELECT count(player)
+FROM batting;
+
+
